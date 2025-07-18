@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+}
+:root{
+    --dark-01:#131313;
+    --dark-02:#424242;
+    --dark-03:#727272;
+    --white:#FFFFFF;
+    --orange:#FF900E;
+}
+
+/**share style**/
+.display-flex{
+    display: flex;
+}
+
+
+/**Header style**/
+.header-container{
+    max-width:1920px;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/**navbar style**/
+.nav-bar{
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 240px 50px 228px;
+}
+.nav-bar h3{
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: var(--dark-01);
+}
+.nav-bar-items ul{
+    gap: 40px;
+}
+.nav-bar-items ul li{
+    list-style: none;
+}
+.nav-bar-items ul li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--dark-02);
+}
+/**banner section**/
+.brand-title{
+    max-width: 862px;
+    text-align: center;
+}
+.brand-title h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark-01);
+}
+.brand-title p{
+    max-width: 862px;
+    text-align: center;
+}
+.Explore-btn{
+    padding: 20px 24px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+
+/**small device**/
+@media only screen and (max-width: 576px) {
+    .header-container{
+        max-width: 576px;
+        background-color: rgba(255, 144, 14, 0.1);
+    }
+    .nav-bar{
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 48px;
+    }
+    .nav-bar-items ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
