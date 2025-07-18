@@ -29,6 +29,7 @@
     max-width:1920px;
     background-color: rgba(255, 144, 14, 0.1);
     padding: 0px 240px 45px 240px;
+    margin: auto;
 }
 /**navbar style**/
 .nav-bar{
@@ -110,12 +111,46 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-#quick-list{}
+
+/** team management part start style **/
+.team-management{
+    align-items: center;
+    justify-content: space-between;
+    gap: 73px;
+    margin-top: 85px;
+}
+.teams-communication{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.features-titile{
+    font-size: 2.8125rem;
+    margin-bottom: 24px;
+}
+#quick-list{
+    color: var(--dark-03);
+    font-weight: 400;
+}
+#of-our{
+    color: var(--dark-01);
+    font-weight: 700;
+}
+#feature{
+    color: var(--orange);
+    font-weight: 700;
+}
+.description{
+    color: var(--dark-03);
+    font-size: 1rem;
+}
 
 
 
 /**small device**/
 @media only screen and (max-width: 576px) {
+
+    /**header responsive**/
     .header-container{
         max-width: 576px;
         background-color: rgba(255, 144, 14, 0.1);
@@ -133,5 +168,17 @@
     .brand-hero-container{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    /**main content team communication section responsive**/
+    .main-container{
+        max-width: 576px;
+        padding: 20px;
+    }
+    .team-management{
+        flex-direction: column;
+    }
+    .teams-communication{
+        grid-template-columns: repeat(1,1fr);
     }
 }
