@@ -78,8 +78,10 @@
     padding: 32px 0px 50px 0px;
 }
 .Explore-btn {
+padding: 20px 24px;
+}
+.Explore-btn, .Experience-btn {
     position: relative;
-    padding: 20px 24px;
     border: none;
     background-color: var(--orange);
     color: var(--white);
@@ -88,7 +90,7 @@
     overflow: hidden;
     z-index: 1;
 }
-.Explore-btn::before {
+.Explore-btn::before, .Experience-btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -100,9 +102,12 @@
     transition: width 0.4s ease-in-out;
     border-radius: 8px;
 }
-.Explore-btn:hover::before {
+
+.Explore-btn:hover::before, 
+.Experience-btn:hover::before {
     width: 100%;
 }
+
 .brand-image img{
     width: 100%;
 }
@@ -144,8 +149,55 @@
     color: var(--dark-03);
     font-size: 1rem;
 }
+/**features-container**/
+.features-container{}
+.features-content{
+    align-items: center;
+    justify-content: space-between;
+    gap: 54px;
+    margin-top: 104px;
+}
+.desktopmobile-card{
+    flex-direction: column;
+    gap: 20px;
+}
+.love-enjoy{
+    padding-left: 21px;
+    border-left: 5px solid var(--orange);
+}
+#love-enjoy{
+    font-size: 2.8125rem;
+    color: var(--dark-01);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.feature-experience-img{
+    max-width: 880px;
+}
+.Experience-btn{
+    padding: 46px 42px;
+    border-radius: 8px;
+    margin-left: -92px;
+    margin-top: -120px;
+}
+#year{
+    font-size: 4.0625rem;
+    font-weight: 700;
+}
+#Experience{
+    font-size: 1.5625rem;
 
-
+}
+.mb{
+    margin-bottom: 30px;
+}
+.card-items{
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.feature-love-title{
+    width: 586px;
+}
 
 /**small device**/
 @media only screen and (max-width: 576px) {
@@ -180,5 +232,21 @@
     }
     .teams-communication{
         grid-template-columns: repeat(1,1fr);
+    }
+    .features-content{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .feature-love-title{
+        width: 100%;
+    }
+    .feature-experience-img{
+        width: 100%;
+    }
+    .architects-img img{
+        width: 100%;
+    }
+    .Experience-btn{
+        margin: 20px 0px 0px 0px;
     }
 }
